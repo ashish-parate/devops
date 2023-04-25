@@ -1,0 +1,6 @@
+- name: webserver role
+  hosts: all
+  become: True
+  roles: 
+   - web-server-role
+   - app-server-role

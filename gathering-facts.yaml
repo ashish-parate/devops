@@ -1,0 +1,10 @@
+---
+- name: gathering facts
+  hosts: all
+  tasks:
+  - name: print os
+    debug:
+     msg: "{{ansible distribution}}"
+  - name: print ip
+    debug:
+     msg: "{{ansible-defaults.

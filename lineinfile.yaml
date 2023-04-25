@@ -1,0 +1,9 @@
+- name: line in file example
+  hosts: all
+  become: True
+  tasks:
+   - name:
+     lineinfile:
+      name: /var/www/html/index.html
+      regexp: '^<h1> My batch is ansible devops </h1>'
+      line: "<h1> hello world</h1>"

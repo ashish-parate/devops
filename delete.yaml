@@ -1,0 +1,12 @@
+---
+- name: delete line
+  hosts: all
+  become: True
+  tasks:
+   - name: delete line
+     lineinfile:
+      path: /var/www/html/index.html
+      regexp: '^<h1>'
+      state: absent
+...
+   

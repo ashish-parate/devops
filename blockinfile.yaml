@@ -1,0 +1,14 @@
+---
+- name: block in file example
+  hosts: all
+  become: True
+  tasks:
+   - name: blockinfile example
+     blockinfile:
+      path: /var/www/html/index.html
+      marker: "<!--{mark} Vishal's managed Block-->"
+      block: |
+        <h1> Hello world welcome to cbz </h1>
+        <h2> My name is Vishal </h2>
+        <h3> this is devops batch </h3>
+...

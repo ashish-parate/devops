@@ -1,0 +1,8 @@
+---
+- name: variable example
+  hosts: all
+  tasks:
+  - name: print URL
+    debug:
+     msg: "Google.com"
+...

@@ -1,0 +1,25 @@
+---
+- name: my web service
+  hosts: all
+  tasks:
+   - name: install web packages
+     package:
+      name: httpd
+      state: latest
+     when: ansible_os_family == "RedHat"
+   - name: install pache2
+     package:
+       name: apache2
+       state: latest
+     when: ansible_os_family == "Debian"
+   - name: start httpd
+     systemd:
+      name: httpd
+      state: started
+     when: ansible_os_family == "RedHat"
+   - name: start apache2
+     systemd:
+      name: apache2
+      state: started
+     when: ansible_os_family == "Debian"
+...

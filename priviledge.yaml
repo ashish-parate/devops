@@ -1,0 +1,16 @@
+---
+- name: previllage escallation
+  hosts: all
+  tasks:
+   - name: install httpd
+     yum:
+      name: httpd
+      state: latest
+     when: ansible_os_family == "RedHat"
+     become: True
+   - name: install apache2
+     apt:
+      name: apache2
+      state: latest
+     when: ansible_os_family == "Debian"
+     become: True

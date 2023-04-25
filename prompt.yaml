@@ -1,0 +1,25 @@
+---
+- name: variable example
+  hosts: all
+  vars:
+   URL: "Global variable"
+  vars_files:
+     - ./variable.txt
+  vars_prompt:
+   name: URL
+   prompt: please enter url
+   private: false
+  tasks:
+  - name: print global variable
+    debug:
+     msg: "{{URL}}"
+  - name: print local variable
+    vars:
+     url: "Local Variable"
+    debug:
+     msg: "{{url}}"
+  - name:
+    debug:
+     msg: "{{URL}}"
+...
+

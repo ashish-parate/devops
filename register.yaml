@@ -1,0 +1,9 @@
+- name: register demo
+  hosts: all
+  tasks: 
+   - name: get hostname
+     shell: hostname
+     register: URL
+   - name: print hostname
+     debug:
+      msg: "URL.stdout"
