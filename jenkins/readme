@@ -1,0 +1,11 @@
+ #jenkins
+ # jenkins installation
+   1 wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    2  yum install wget
+    3  wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    4 yum clean all
+   5  yum repo list
+   6  yum repolist
+   7   vi /etc/yum.repos.d/jenkins.repo
+   8  rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+   9  yum upgrade
