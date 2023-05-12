@@ -9,3 +9,16 @@
    7   vi /etc/yum.repos.d/jenkins.repo
    8  rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
    9  yum upgrade
+  10 install java-11-openjdk
+  11 install jenkins
+  12 systemctl daemon-reload
+  13 systemctl start jenkins
+  14 systemctl enable jenkins
+  15
+  16
+  17
+  18
+  19
+  20
+  21
+  
