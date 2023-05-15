@@ -1,14 +1,14 @@
 node {
-    stages('Pull') {
+    stage('Pull') {
         echo 'hello world'
     }
-    stages('build') {
+    stage('build') {
         echo 'build success'
     }
-    stages('Test') {
+    stage('Test') {
         echo 'test done'
     }
-    stages('deploy') {
+    stage('deploy') {
         echo 'deploy work'
     }
 }
