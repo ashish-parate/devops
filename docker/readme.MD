@@ -1,3 +1,3 @@
 # docker 
 
-## docker ru
+## docker run <image>
