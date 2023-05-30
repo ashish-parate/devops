@@ -1,3 +1,3 @@
 # docker 
 
-## docker run <image> .... run con
+## docker run <image> .... run container from docker image
