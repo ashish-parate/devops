@@ -3,4 +3,5 @@
 ## docker 
 - docker run <image> .... run container from docker image
 - docker run -d <image> .... demon service and detach 
-- docker ps .... list 
+- docker ps .... list running image
+-
